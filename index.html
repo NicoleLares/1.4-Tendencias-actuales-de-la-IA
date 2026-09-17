@@ -9,9 +9,7 @@
     <meta name="description"
         content="Plataforma Web de Inteligencia Artificial para traducción entre español e inglés mediante texto, audio, documentos e imágenes.">
 
-    <title>
-        Multimodal Translator AI
-    </title>
+    <title>Multimodal Translator AI</title>
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -24,6 +22,21 @@
 </head>
 
 <body>
+
+    <!-- ======================================================
+         FONDO DECORATIVO
+    ======================================================= -->
+
+    <div class="background-decoration">
+
+        <div class="orange-glow orange-glow-one"></div>
+
+        <div class="orange-glow orange-glow-two"></div>
+
+        <div class="grid-overlay"></div>
+
+    </div>
+
 
     <!-- ======================================================
          HEADER
@@ -41,10 +54,14 @@
                         <i class="bi bi-translate"></i>
                     </div>
 
-                    <div>
+                    <div class="brand-copy">
+
+                        <span class="brand-eyebrow">
+                            AI TRANSLATION PLATFORM
+                        </span>
 
                         <h1>
-                            Multimodal Translator AI
+                            Multimodal Translator
                         </h1>
 
                         <p>
@@ -56,11 +73,21 @@
                 </div>
 
 
-                <div class="header-badge">
+                <div class="header-status">
 
-                    <span class="status-dot"></span>
+                    <span class="status-indicator">
 
-                    Inteligencia Artificial
+                        <span class="status-dot"></span>
+
+                        AI Online
+
+                    </span>
+
+                    <span class="header-divider"></span>
+
+                    <span class="header-version">
+                        Multimodal
+                    </span>
 
                 </div>
 
@@ -79,30 +106,103 @@
 
         <div class="container">
 
-            <div class="module-buttons">
+            <div class="module-navigation-inner">
 
-                <button class="module-button active" data-module="chat" type="button">
-                    <i class="bi bi-chat-dots"></i>
-                    <span>Chat</span>
-                </button>
+                <div class="module-buttons">
 
 
-                <button class="module-button" data-module="audio" type="button">
-                    <i class="bi bi-mic"></i>
-                    <span>Audio</span>
-                </button>
+                    <!-- CHAT -->
+
+                    <button class="module-button active" data-module="chat" type="button">
+
+                        <span class="module-icon">
+                            <i class="bi bi-chat-dots"></i>
+                        </span>
+
+                        <span class="module-text">
+
+                            <strong>
+                                Chat
+                            </strong>
+
+                            <small>
+                                Conversación
+                            </small>
+
+                        </span>
+
+                    </button>
 
 
-                <button class="module-button" data-module="documents" type="button">
-                    <i class="bi bi-file-earmark-text"></i>
-                    <span>Documentos</span>
-                </button>
+                    <!-- AUDIO -->
+
+                    <button class="module-button" data-module="audio" type="button">
+
+                        <span class="module-icon">
+                            <i class="bi bi-mic"></i>
+                        </span>
+
+                        <span class="module-text">
+
+                            <strong>
+                                Audio
+                            </strong>
+
+                            <small>
+                                Voz
+                            </small>
+
+                        </span>
+
+                    </button>
 
 
-                <button class="module-button" data-module="images" type="button">
-                    <i class="bi bi-image"></i>
-                    <span>Imágenes</span>
-                </button>
+                    <!-- DOCUMENTOS -->
+
+                    <button class="module-button" data-module="documents" type="button">
+
+                        <span class="module-icon">
+                            <i class="bi bi-file-earmark-text"></i>
+                        </span>
+
+                        <span class="module-text">
+
+                            <strong>
+                                Documentos
+                            </strong>
+
+                            <small>
+                                PDF · DOCX · TXT
+                            </small>
+
+                        </span>
+
+                    </button>
+
+
+                    <!-- IMÁGENES -->
+
+                    <button class="module-button" data-module="images" type="button">
+
+                        <span class="module-icon">
+                            <i class="bi bi-image"></i>
+                        </span>
+
+                        <span class="module-text">
+
+                            <strong>
+                                Imágenes
+                            </strong>
+
+                            <small>
+                                Texto visual
+                            </small>
+
+                        </span>
+
+                    </button>
+
+                </div>
 
             </div>
 
@@ -112,7 +212,7 @@
 
 
     <!-- ======================================================
-         CONTENIDO
+         CONTENIDO PRINCIPAL
     ======================================================= -->
 
     <main class="main-content">
@@ -131,8 +231,11 @@
                     <div>
 
                         <span class="section-tag">
-                            <i class="bi bi-chat-square-text"></i>
-                            Traducción conversacional
+
+                            <i class="bi bi-stars"></i>
+
+                            Traducción inteligente
+
                         </span>
 
 
@@ -142,8 +245,8 @@
 
 
                         <p>
-                            Dos participantes pueden conversar en español
-                            e inglés mientras la plataforma traduce cada
+                            Mantén una conversación entre español e inglés
+                            mientras la Inteligencia Artificial traduce cada
                             mensaje automáticamente.
                         </p>
 
@@ -161,20 +264,37 @@
                 </div>
 
 
-                <div class="chat-layout">
+                <div class="workspace-layout chat-layout">
 
 
-                    <!-- CONFIGURACIÓN -->
+                    <!-- CONFIGURACIÓN DEL CHAT -->
 
                     <aside class="conversation-settings">
 
-                        <div class="panel-card">
+                        <div class="panel-card accent-panel">
 
-                            <div class="panel-title">
+                            <div class="panel-title-row">
 
-                                <i class="bi bi-person-circle"></i>
+                                <div>
 
-                                Participante
+                                    <span class="panel-overline">
+                                        CONFIGURACIÓN
+                                    </span>
+
+                                    <div class="panel-title">
+
+                                        <i class="bi bi-person-circle"></i>
+
+                                        Participante
+
+                                    </div>
+
+                                </div>
+
+
+                                <span class="panel-number">
+                                    01
+                                </span>
 
                             </div>
 
@@ -199,18 +319,31 @@
 
                             <div class="direction-card">
 
-                                <span class="direction-label">
-                                    Dirección
-                                </span>
+                                <div class="direction-icon">
 
-                                <strong id="languageDirection">
-                                    Español → English
-                                </strong>
+                                    <i class="bi bi-arrow-left-right"></i>
+
+                                </div>
+
+
+                                <div>
+
+                                    <span class="direction-label">
+                                        Dirección
+                                    </span>
+
+                                    <strong id="languageDirection">
+                                        Español → English
+                                    </strong>
+
+                                </div>
 
                             </div>
 
                         </div>
 
+
+                        <!-- INFORMACIÓN -->
 
                         <div class="panel-card information-card">
 
@@ -218,40 +351,57 @@
 
                                 <i class="bi bi-info-circle"></i>
 
-                                ¿Cómo funciona?
+                                Conversación
 
                             </div>
 
 
                             <p>
-                                Selecciona quién escribe y la aplicación
-                                determinará automáticamente la dirección
-                                de traducción.
+                                Cambia el participante para seleccionar
+                                automáticamente el idioma de origen y destino.
                             </p>
 
 
                             <div class="language-example">
 
-                                <span>
-                                    🇲🇽 Participante A
+                                <span class="language-badge">
+                                    ES
                                 </span>
 
-                                <small>
-                                    Español → Inglés
-                                </small>
+
+                                <div>
+
+                                    <strong>
+                                        Participante A
+                                    </strong>
+
+                                    <small>
+                                        Español → English
+                                    </small>
+
+                                </div>
 
                             </div>
 
 
                             <div class="language-example">
 
-                                <span>
-                                    🇺🇸 Participant B
+                                <span class="language-badge">
+                                    EN
                                 </span>
 
-                                <small>
-                                    English → Spanish
-                                </small>
+
+                                <div>
+
+                                    <strong>
+                                        Participant B
+                                    </strong>
+
+                                    <small>
+                                        English → Español
+                                    </small>
+
+                                </div>
 
                             </div>
 
@@ -260,9 +410,35 @@
                     </aside>
 
 
-                    <!-- CHAT -->
+                    <!-- CHAT PRINCIPAL -->
 
-                    <div class="chat-panel">
+                    <div class="chat-panel workspace-panel">
+
+                        <div class="workspace-panel-header">
+
+                            <div>
+
+                                <span class="workspace-label">
+                                    LIVE TRANSLATION
+                                </span>
+
+                                <strong>
+                                    Conversación
+                                </strong>
+
+                            </div>
+
+
+                            <div class="live-badge">
+
+                                <span></span>
+
+                                Activo
+
+                            </div>
+
+                        </div>
+
 
                         <div id="messagesContainer" class="messages-container" aria-live="polite">
 
@@ -270,9 +446,14 @@
 
                                 <div class="empty-icon">
 
-                                    <i class="bi bi-translate"></i>
+                                    <i class="bi bi-chat-square-dots"></i>
 
                                 </div>
+
+
+                                <span class="empty-eyebrow">
+                                    MULTIMODAL AI
+                                </span>
 
 
                                 <h3>
@@ -282,8 +463,8 @@
 
                                 <p>
                                     Escribe un mensaje en español o inglés.
-                                    Aquí aparecerán el texto original y
-                                    su traducción.
+                                    El texto original y su traducción
+                                    aparecerán aquí.
                                 </p>
 
                             </div>
@@ -322,7 +503,7 @@
 
                                 <span class="send-button-content">
 
-                                    <i class="bi bi-send"></i>
+                                    <i class="bi bi-send-fill"></i>
 
                                     Traducir
 
@@ -360,23 +541,22 @@
 
                         <span class="section-tag">
 
-                            <i class="bi bi-mic"></i>
+                            <i class="bi bi-soundwave"></i>
 
-                            Traducción de audio
+                            Speech Intelligence
 
                         </span>
 
 
                         <h2>
-                            Voz en español e inglés
+                            Traducción de audio
                         </h2>
 
 
                         <p>
-                            Carga un archivo de audio. La plataforma
-                            transcribirá el contenido hablado, traducirá
-                            el texto y generará una versión hablada en
-                            el idioma de destino.
+                            Convierte voz en texto, traduce el contenido
+                            y genera una nueva versión hablada en el idioma
+                            de destino.
                         </p>
 
                     </div>
@@ -384,7 +564,7 @@
                 </div>
 
 
-                <form id="audioForm" class="audio-layout">
+                <form id="audioForm" class="audio-layout workspace-layout">
 
 
                     <!-- CONFIGURACIÓN -->
@@ -392,15 +572,31 @@
                     <aside class="audio-sidebar">
 
 
-                        <!-- IDIOMAS -->
+                        <div class="panel-card accent-panel">
 
-                        <div class="panel-card">
+                            <div class="panel-title-row">
 
-                            <div class="panel-title">
+                                <div>
 
-                                <i class="bi bi-sliders"></i>
+                                    <span class="panel-overline">
+                                        IDIOMAS
+                                    </span>
 
-                                Configuración
+
+                                    <div class="panel-title">
+
+                                        <i class="bi bi-sliders"></i>
+
+                                        Configuración
+
+                                    </div>
+
+                                </div>
+
+
+                                <span class="panel-number">
+                                    01
+                                </span>
 
                             </div>
 
@@ -443,7 +639,7 @@
 
                             <button id="swapAudioLanguagesButton" class="swap-button" type="button">
 
-                                <i class="bi bi-arrow-left-right"></i>
+                                <i class="bi bi-arrow-down-up"></i>
 
                                 Intercambiar idiomas
 
@@ -452,28 +648,57 @@
 
                             <div class="direction-card">
 
-                                <span class="direction-label">
-                                    Dirección
-                                </span>
+                                <div class="direction-icon">
 
-                                <strong id="audioLanguageDirection">
-                                    Español → English
-                                </strong>
+                                    <i class="bi bi-translate"></i>
+
+                                </div>
+
+
+                                <div>
+
+                                    <span class="direction-label">
+                                        Dirección
+                                    </span>
+
+                                    <strong id="audioLanguageDirection">
+                                        Español → English
+                                    </strong>
+
+                                </div>
 
                             </div>
 
                         </div>
 
 
-                        <!-- ARCHIVO -->
+                        <!-- ARCHIVO DE AUDIO -->
 
                         <div class="panel-card">
 
-                            <div class="panel-title">
+                            <div class="panel-title-row">
 
-                                <i class="bi bi-file-earmark-music"></i>
+                                <div>
 
-                                Seleccionar audio
+                                    <span class="panel-overline">
+                                        ARCHIVO
+                                    </span>
+
+
+                                    <div class="panel-title">
+
+                                        <i class="bi bi-file-earmark-music"></i>
+
+                                        Seleccionar audio
+
+                                    </div>
+
+                                </div>
+
+
+                                <span class="panel-number">
+                                    02
+                                </span>
 
                             </div>
 
@@ -483,19 +708,17 @@
 
 
                             <small class="support-text">
-
-                                Formatos admitidos:
-                                MP3, WAV, M4A, MP4, MPEG,
-                                MPGA y WEBM.
-
-                                Tamaño máximo: 2.5 MB.
-
+                                MP3, WAV, M4A, MP4, MPEG, MPGA y WEBM · Máximo 2.5 MB
                             </small>
 
 
-                            <div id="audioFileInfo" class="audio-file-info">
+                            <div id="audioFileInfo" class="audio-file-info file-information">
 
-                                <i class="bi bi-file-earmark-music"></i>
+                                <div class="file-icon">
+
+                                    <i class="bi bi-music-note-beamed"></i>
+
+                                </div>
 
 
                                 <div>
@@ -517,7 +740,7 @@
 
                                 <span class="audio-button-content">
 
-                                    <i class="bi bi-magic"></i>
+                                    <i class="bi bi-stars"></i>
 
                                     Procesar audio
 
@@ -543,7 +766,7 @@
 
                             <div class="panel-title">
 
-                                <i class="bi bi-volume-up"></i>
+                                <i class="bi bi-headphones"></i>
 
                                 Audio original
 
@@ -554,49 +777,51 @@
 
                         </div>
 
+                    </aside>
 
-                        <!-- INFORMACIÓN -->
 
-                        <div class="panel-card information-card">
+                    <!-- RESULTADOS -->
 
-                            <div class="panel-title">
+                    <div class="audio-results-panel workspace-panel">
 
-                                <i class="bi bi-info-circle"></i>
+                        <div class="workspace-panel-header">
 
-                                ¿Cómo funciona?
+                            <div>
+
+                                <span class="workspace-label">
+                                    AUDIO PROCESSOR
+                                </span>
+
+                                <strong>
+                                    Procesamiento inteligente
+                                </strong>
 
                             </div>
 
 
-                            <p>
-                                Primero la Inteligencia Artificial
-                                convierte la voz en texto.
-                            </p>
+                            <span class="ai-chip">
 
+                                <i class="bi bi-cpu"></i>
 
-                            <p>
-                                Después traduce la transcripción
-                                y genera una nueva voz en el idioma
-                                seleccionado.
-                            </p>
+                                AI
+
+                            </span>
 
                         </div>
-
-                    </aside>
-
-
-                    <!-- RESULTADOS AUDIO -->
-
-                    <div class="audio-results-panel">
 
 
                         <div id="audioStatusMessage" class="status-message" role="status"></div>
 
 
+                        <!-- FLUJO -->
+
                         <div class="audio-process-flow">
 
-
                             <div class="audio-process-step">
+
+                                <span class="process-number">
+                                    01
+                                </span>
 
                                 <i class="bi bi-mic"></i>
 
@@ -607,24 +832,32 @@
                             </div>
 
 
-                            <i class="bi bi-arrow-right flow-arrow"></i>
+                            <i class="bi bi-chevron-right flow-arrow"></i>
 
 
                             <div class="audio-process-step">
 
+                                <span class="process-number">
+                                    02
+                                </span>
+
                                 <i class="bi bi-card-text"></i>
 
                                 <span>
-                                    Transcripción
+                                    Texto
                                 </span>
 
                             </div>
 
 
-                            <i class="bi bi-arrow-right flow-arrow"></i>
+                            <i class="bi bi-chevron-right flow-arrow"></i>
 
 
                             <div class="audio-process-step">
+
+                                <span class="process-number">
+                                    03
+                                </span>
 
                                 <i class="bi bi-translate"></i>
 
@@ -635,10 +868,14 @@
                             </div>
 
 
-                            <i class="bi bi-arrow-right flow-arrow"></i>
+                            <i class="bi bi-chevron-right flow-arrow"></i>
 
 
                             <div class="audio-process-step">
+
+                                <span class="process-number">
+                                    04
+                                </span>
 
                                 <i class="bi bi-volume-up"></i>
 
@@ -656,15 +893,28 @@
 
                             <!-- TRANSCRIPCIÓN -->
 
-                            <div class="audio-result-card">
+                            <div class="audio-result-card result-card-modern">
 
                                 <div class="result-card-header">
 
-                                    <i class="bi bi-card-text"></i>
+                                    <span class="result-icon">
 
-                                    <h3>
-                                        Transcripción original
-                                    </h3>
+                                        <i class="bi bi-card-text"></i>
+
+                                    </span>
+
+
+                                    <div>
+
+                                        <span>
+                                            ORIGINAL
+                                        </span>
+
+                                        <h3>
+                                            Transcripción
+                                        </h3>
+
+                                    </div>
 
                                 </div>
 
@@ -678,15 +928,28 @@
 
                             <!-- TRADUCCIÓN -->
 
-                            <div class="audio-result-card">
+                            <div class="audio-result-card result-card-modern">
 
                                 <div class="result-card-header">
 
-                                    <i class="bi bi-translate"></i>
+                                    <span class="result-icon">
 
-                                    <h3>
-                                        Traducción
-                                    </h3>
+                                        <i class="bi bi-translate"></i>
+
+                                    </span>
+
+
+                                    <div>
+
+                                        <span>
+                                            TRANSLATION
+                                        </span>
+
+                                        <h3>
+                                            Traducción
+                                        </h3>
+
+                                    </div>
 
                                 </div>
 
@@ -715,13 +978,16 @@
 
                                 <div>
 
+                                    <span class="workspace-label">
+                                        GENERATED SPEECH
+                                    </span>
+
                                     <strong>
                                         Audio traducido
                                     </strong>
 
                                     <p>
-                                        Escucha la traducción generada
-                                        mediante Inteligencia Artificial.
+                                        Voz generada mediante Inteligencia Artificial.
                                     </p>
 
                                 </div>
@@ -753,22 +1019,22 @@
 
                         <span class="section-tag">
 
-                            <i class="bi bi-file-earmark-text"></i>
+                            <i class="bi bi-file-earmark-richtext"></i>
 
-                            Traducción de documentos
+                            Document Intelligence
 
                         </span>
 
 
                         <h2>
-                            PDF, Word y archivos de texto
+                            Traducción de documentos
                         </h2>
 
 
                         <p>
-                            Carga un documento y la plataforma extraerá
-                            su contenido textual para mostrar el texto
-                            original y su traducción de forma ordenada.
+                            Procesa documentos PDF, Word y archivos TXT,
+                            extrae su contenido y obtén la traducción mediante
+                            Inteligencia Artificial.
                         </p>
 
                     </div>
@@ -776,20 +1042,38 @@
                 </div>
 
 
-                <form id="documentForm" class="document-layout">
+                <form id="documentForm" class="document-layout workspace-layout">
 
 
                     <!-- CONFIGURACIÓN -->
 
                     <aside class="document-sidebar">
 
-                        <div class="panel-card">
+                        <div class="panel-card accent-panel">
 
-                            <div class="panel-title">
+                            <div class="panel-title-row">
 
-                                <i class="bi bi-sliders"></i>
+                                <div>
 
-                                Configuración
+                                    <span class="panel-overline">
+                                        IDIOMAS
+                                    </span>
+
+
+                                    <div class="panel-title">
+
+                                        <i class="bi bi-sliders"></i>
+
+                                        Configuración
+
+                                    </div>
+
+                                </div>
+
+
+                                <span class="panel-number">
+                                    01
+                                </span>
 
                             </div>
 
@@ -832,7 +1116,7 @@
 
                             <button id="swapDocumentLanguagesButton" class="swap-button" type="button">
 
-                                <i class="bi bi-arrow-left-right"></i>
+                                <i class="bi bi-arrow-down-up"></i>
 
                                 Intercambiar idiomas
 
@@ -841,13 +1125,24 @@
 
                             <div class="direction-card">
 
-                                <span class="direction-label">
-                                    Dirección
-                                </span>
+                                <div class="direction-icon">
 
-                                <strong id="documentLanguageDirection">
-                                    Español → English
-                                </strong>
+                                    <i class="bi bi-translate"></i>
+
+                                </div>
+
+
+                                <div>
+
+                                    <span class="direction-label">
+                                        Dirección
+                                    </span>
+
+                                    <strong id="documentLanguageDirection">
+                                        Español → English
+                                    </strong>
+
+                                </div>
 
                             </div>
 
@@ -858,11 +1153,29 @@
 
                         <div class="panel-card">
 
-                            <div class="panel-title">
+                            <div class="panel-title-row">
 
-                                <i class="bi bi-cloud-arrow-up"></i>
+                                <div>
 
-                                Seleccionar documento
+                                    <span class="panel-overline">
+                                        ARCHIVO
+                                    </span>
+
+
+                                    <div class="panel-title">
+
+                                        <i class="bi bi-cloud-arrow-up"></i>
+
+                                        Documento
+
+                                    </div>
+
+                                </div>
+
+
+                                <span class="panel-number">
+                                    02
+                                </span>
 
                             </div>
 
@@ -872,18 +1185,17 @@
 
 
                             <small class="support-text">
-
-                                Formatos admitidos:
-                                PDF, DOCX y TXT.
-
-                                Tamaño máximo: 2.5 MB.
-
+                                PDF, DOCX y TXT · Máximo 2.5 MB
                             </small>
 
 
-                            <div id="documentFileInfo" class="document-file-info">
+                            <div id="documentFileInfo" class="document-file-info file-information">
 
-                                <i class="bi bi-file-earmark"></i>
+                                <div class="file-icon">
+
+                                    <i class="bi bi-file-earmark-text"></i>
+
+                                </div>
 
 
                                 <div>
@@ -905,7 +1217,7 @@
 
                                 <span class="document-button-content">
 
-                                    <i class="bi bi-translate"></i>
+                                    <i class="bi bi-stars"></i>
 
                                     Traducir documento
 
@@ -925,30 +1237,20 @@
                         </div>
 
 
-                        <!-- INFORMACIÓN -->
-
                         <div class="panel-card information-card">
 
                             <div class="panel-title">
 
                                 <i class="bi bi-info-circle"></i>
 
-                                Importante
+                                Compatibilidad
 
                             </div>
 
 
                             <p>
-                                La plataforma extrae el contenido textual
-                                y lo traduce. No reconstruye un archivo
-                                PDF o Word idéntico al original.
-                            </p>
-
-
-                            <p>
-                                Los documentos PDF escaneados que solamente
-                                contengan fotografías podrían no tener
-                                texto extraíble.
+                                Los archivos PDF deben contener texto
+                                seleccionable para poder extraer su contenido.
                             </p>
 
                         </div>
@@ -958,7 +1260,33 @@
 
                     <!-- RESULTADOS -->
 
-                    <div class="document-results-panel">
+                    <div class="document-results-panel workspace-panel">
+
+                        <div class="workspace-panel-header">
+
+                            <div>
+
+                                <span class="workspace-label">
+                                    DOCUMENT PROCESSOR
+                                </span>
+
+                                <strong>
+                                    Resultado
+                                </strong>
+
+                            </div>
+
+
+                            <span class="ai-chip">
+
+                                <i class="bi bi-cpu"></i>
+
+                                AI
+
+                            </span>
+
+                        </div>
+
 
                         <div id="documentStatusMessage" class="status-message" role="status"></div>
 
@@ -979,15 +1307,28 @@
 
                             <!-- ORIGINAL -->
 
-                            <div class="document-result-card">
+                            <div class="document-result-card result-card-modern">
 
                                 <div class="result-card-header">
 
-                                    <i class="bi bi-file-earmark-text"></i>
+                                    <span class="result-icon">
 
-                                    <h3>
-                                        Contenido original
-                                    </h3>
+                                        <i class="bi bi-file-earmark-text"></i>
+
+                                    </span>
+
+
+                                    <div>
+
+                                        <span>
+                                            SOURCE
+                                        </span>
+
+                                        <h3>
+                                            Contenido original
+                                        </h3>
+
+                                    </div>
 
                                 </div>
 
@@ -1000,15 +1341,28 @@
 
                             <!-- TRADUCCIÓN -->
 
-                            <div class="document-result-card">
+                            <div class="document-result-card result-card-modern">
 
                                 <div class="result-card-header">
 
-                                    <i class="bi bi-translate"></i>
+                                    <span class="result-icon">
 
-                                    <h3>
-                                        Traducción
-                                    </h3>
+                                        <i class="bi bi-translate"></i>
+
+                                    </span>
+
+
+                                    <div>
+
+                                        <span>
+                                            TRANSLATION
+                                        </span>
+
+                                        <h3>
+                                            Traducción
+                                        </h3>
+
+                                    </div>
 
                                 </div>
 
@@ -1039,23 +1393,22 @@
 
                         <span class="section-tag">
 
-                            <i class="bi bi-image"></i>
+                            <i class="bi bi-eye"></i>
 
-                            Traducción de imágenes
+                            Vision AI
 
                         </span>
 
 
                         <h2>
-                            Texto visible en imágenes
+                            Traducción visual
                         </h2>
 
 
                         <p>
-                            Carga una imagen con texto visible como
-                            señalizaciones, capturas de pantalla, menús,
-                            anuncios o etiquetas y la IA interpretará
-                            y traducirá su contenido.
+                            Carga una imagen con texto visible y permite que
+                            la Inteligencia Artificial interprete y traduzca
+                            su contenido.
                         </p>
 
                     </div>
@@ -1063,20 +1416,38 @@
                 </div>
 
 
-                <form id="imageForm" class="image-layout">
+                <form id="imageForm" class="image-layout workspace-layout">
 
 
                     <!-- CONFIGURACIÓN -->
 
                     <aside class="image-sidebar">
 
-                        <div class="panel-card">
+                        <div class="panel-card accent-panel">
 
-                            <div class="panel-title">
+                            <div class="panel-title-row">
 
-                                <i class="bi bi-sliders"></i>
+                                <div>
 
-                                Configuración
+                                    <span class="panel-overline">
+                                        IDIOMAS
+                                    </span>
+
+
+                                    <div class="panel-title">
+
+                                        <i class="bi bi-sliders"></i>
+
+                                        Configuración
+
+                                    </div>
+
+                                </div>
+
+
+                                <span class="panel-number">
+                                    01
+                                </span>
 
                             </div>
 
@@ -1119,7 +1490,7 @@
 
                             <button id="swapImageLanguagesButton" class="swap-button" type="button">
 
-                                <i class="bi bi-arrow-left-right"></i>
+                                <i class="bi bi-arrow-down-up"></i>
 
                                 Intercambiar idiomas
 
@@ -1128,13 +1499,24 @@
 
                             <div class="direction-card">
 
-                                <span class="direction-label">
-                                    Dirección
-                                </span>
+                                <div class="direction-icon">
 
-                                <strong id="imageLanguageDirection">
-                                    Español → English
-                                </strong>
+                                    <i class="bi bi-translate"></i>
+
+                                </div>
+
+
+                                <div>
+
+                                    <span class="direction-label">
+                                        Dirección
+                                    </span>
+
+                                    <strong id="imageLanguageDirection">
+                                        Español → English
+                                    </strong>
+
+                                </div>
 
                             </div>
 
@@ -1145,11 +1527,29 @@
 
                         <div class="panel-card">
 
-                            <div class="panel-title">
+                            <div class="panel-title-row">
 
-                                <i class="bi bi-upload"></i>
+                                <div>
 
-                                Seleccionar imagen
+                                    <span class="panel-overline">
+                                        IMAGEN
+                                    </span>
+
+
+                                    <div class="panel-title">
+
+                                        <i class="bi bi-cloud-arrow-up"></i>
+
+                                        Cargar imagen
+
+                                    </div>
+
+                                </div>
+
+
+                                <span class="panel-number">
+                                    02
+                                </span>
 
                             </div>
 
@@ -1159,12 +1559,7 @@
 
 
                             <small class="support-text">
-
-                                Formatos admitidos:
-                                PNG, JPG, JPEG y WEBP.
-
-                                Tamaño máximo: 3 MB.
-
+                                PNG, JPG, JPEG y WEBP · Máximo 3 MB
                             </small>
 
 
@@ -1172,7 +1567,7 @@
 
                                 <span class="image-button-content">
 
-                                    <i class="bi bi-search"></i>
+                                    <i class="bi bi-stars"></i>
 
                                     Analizar imagen
 
@@ -1198,7 +1593,7 @@
 
                             <div class="panel-title">
 
-                                <i class="bi bi-card-image"></i>
+                                <i class="bi bi-image"></i>
 
                                 Vista previa
 
@@ -1226,7 +1621,33 @@
 
                     <!-- RESULTADOS -->
 
-                    <div class="image-results-panel">
+                    <div class="image-results-panel workspace-panel">
+
+                        <div class="workspace-panel-header">
+
+                            <div>
+
+                                <span class="workspace-label">
+                                    VISION PROCESSOR
+                                </span>
+
+                                <strong>
+                                    Análisis visual
+                                </strong>
+
+                            </div>
+
+
+                            <span class="ai-chip">
+
+                                <i class="bi bi-eye"></i>
+
+                                AI Vision
+
+                            </span>
+
+                        </div>
+
 
                         <div id="imageStatusMessage" class="status-message" role="status"></div>
 
@@ -1234,15 +1655,30 @@
                         <div class="results-grid">
 
 
-                            <div class="result-card">
+                            <!-- TEXTO DETECTADO -->
+
+                            <div class="result-card result-card-modern">
 
                                 <div class="result-card-header">
 
-                                    <i class="bi bi-fonts"></i>
+                                    <span class="result-icon">
 
-                                    <h3>
-                                        Texto detectado
-                                    </h3>
+                                        <i class="bi bi-fonts"></i>
+
+                                    </span>
+
+
+                                    <div>
+
+                                        <span>
+                                            DETECTION
+                                        </span>
+
+                                        <h3>
+                                            Texto detectado
+                                        </h3>
+
+                                    </div>
 
                                 </div>
 
@@ -1253,15 +1689,30 @@
                             </div>
 
 
-                            <div class="result-card">
+                            <!-- TRADUCCIÓN -->
+
+                            <div class="result-card result-card-modern">
 
                                 <div class="result-card-header">
 
-                                    <i class="bi bi-translate"></i>
+                                    <span class="result-icon">
 
-                                    <h3>
-                                        Traducción
-                                    </h3>
+                                        <i class="bi bi-translate"></i>
+
+                                    </span>
+
+
+                                    <div>
+
+                                        <span>
+                                            TRANSLATION
+                                        </span>
+
+                                        <h3>
+                                            Traducción
+                                        </h3>
+
+                                    </div>
 
                                 </div>
 
@@ -1286,21 +1737,29 @@
 
             <div class="privacy-notice">
 
-                <i class="bi bi-shield-check"></i>
+                <div class="privacy-icon">
+
+                    <i class="bi bi-shield-lock"></i>
+
+                </div>
 
 
                 <div>
 
+                    <span class="privacy-eyebrow">
+                        PRIVACY & AI
+                    </span>
+
+
                     <strong>
-                        Aviso de privacidad
+                        Protección de información
                     </strong>
 
 
                     <p>
-                        El contenido enviado desde esta plataforma puede
-                        ser procesado mediante servicios de Inteligencia
-                        Artificial. Evita cargar información personal,
-                        confidencial o sensible.
+                        El contenido enviado puede ser procesado mediante
+                        servicios de Inteligencia Artificial. Evita cargar
+                        información personal, confidencial o sensible.
                     </p>
 
                 </div>
@@ -1322,27 +1781,58 @@
 
             <div class="footer-content">
 
-                <div>
+                <!-- PROYECTO -->
 
-                    <strong>
-                        Multimodal Translator AI
-                    </strong>
+                <div class="footer-brand">
 
-                    <p>
-                        Aplicación Web de Inteligencia Artificial
-                    </p>
+                    <div class="footer-logo">
+
+                        <i class="bi bi-translate"></i>
+
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            Multimodal Translator AI
+                        </strong>
+
+                        <p>
+                            Artificial Intelligence Translation Platform
+                        </p>
+
+                    </div>
 
                 </div>
 
 
+                <!-- DATOS DEL AUTOR -->
+
                 <div class="footer-author">
 
                     <span>
-                        Desarrollado por
+                        Desarrollado por:
                     </span>
 
                     <strong>
-                        Tu nombre
+                        Nicole Dayana Esparza Lares
+                    </strong>
+
+                    <span>
+                        No. Control: 22200208
+                    </span>
+
+                    <span>
+                        ITICS
+                    </span>
+
+                    <span>
+                        Inteligencia artificial aplicada a las TIC
+                    </span>
+
+                    <strong>
+                        Tecnológico Nacional de México campus Pachuca
                     </strong>
 
                 </div>
@@ -1354,11 +1844,17 @@
     </footer>
 
 
-    <!-- Bootstrap -->
+    <!-- ======================================================
+         BOOTSTRAP
+    ======================================================= -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 
-    <!-- JavaScript -->
+    <!-- ======================================================
+         JAVASCRIPT
+    ======================================================= -->
+
     <script src="./assets/js/app.js"></script>
 
 </body>
