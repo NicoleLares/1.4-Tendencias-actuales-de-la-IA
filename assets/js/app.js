@@ -5,7 +5,7 @@
 // IMPORTANTE:
 // Después de publicar el backend en Vercel cambia esta URL.
 const API_BASE_URL =
-    "https://TU-PROYECTO.vercel.app";
+    "https://1-4-tendencias-actuales-de-la-ia-iota.vercel.app";
 
 const CHAT_ENDPOINT =
     `${API_BASE_URL}/api/chat`;
