@@ -2,8 +2,6 @@
 // CONFIGURACIÓN
 // ============================================================
 
-// IMPORTANTE:
-// Después de publicar el backend en Vercel cambia esta URL.
 const API_BASE_URL =
     "https://1-4-tendencias-actuales-de-la-ia-iota.vercel.app";
 
